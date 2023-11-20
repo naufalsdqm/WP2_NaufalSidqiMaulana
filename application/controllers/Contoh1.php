@@ -1,19 +1,11 @@
 <?php
-class contoh1 extends CI_Controller
+class Contoh1 extends CI_Controller
 {
-    public function index()
+    public function index ()
     {
-        echo "Selamat Datang.. selamat belajar Web Programming";
-    }
-
-    public function penjumlahan($n1, $n2)
-    {
-        $this->load->model('contoh2');
-
-        $data['nilai1'] = $n1;
-        $data['nilai2'] = $n2;
-        $data['hasil'] = $this->contoh2->penjumlahan($n1, $n2);
-
-        $this->load->view('view-contoh3', $data);
+        echo "<h1>Perkenalkan</h1>";
+        echo "Nama saya Naufal Sidqi Maulana
+            Saya tinggal di daerah Cikarang
+            hobby yang saya suka adalah Menonton Film";
     }
 }
